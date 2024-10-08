@@ -1,0 +1,38 @@
+/**
+ * panels/pnl-paper.css
+ * 用紙サイズ・マージン・グリッド設定パネルのスタイル
+ * @copyright 2024 Yujakudo
+ */
+
+ /* マージン設定 */
+ .margin-grid, .padding-grid {
+     display: grid;
+     grid-template-columns: auto 30px auto;
+     gap: 5px;
+ }
+ 
+ .margin-item input, .padding-item input {
+     width: 40px !important;
+ }
+
+ /* グリッド設定 */
+ .grid-settings-line label {
+    min-width: 50px;
+}
+.grid-settings-line label:first-child {
+    text-align: left;
+    font-weight: 400;
+}
+
+.grid-settings-line input[type="radio"] {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.header-footer-panel {
+    flex: 1;
+}
+
+.header-footer-panel label {
+    flex: 2;
+}

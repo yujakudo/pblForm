@@ -1,0 +1,190 @@
+/**
+ * cfe-tab-panels.js
+ * タブパネルのスタイル
+ * @copyright   2024 Yujakudo
+ */
+
+#tab-panels {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--toolbox-background-color);
+    padding: 10px;
+    width: 300px; /* 固定幅 */
+}
+
+.tab-contents {
+    height: calc(100vh - 110px);
+    overflow: auto;   
+}
+
+/* タブリンクのスタイル */
+.tab-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.tab-link {
+    background-color: var(--border-color);
+    border: none;
+    color: var(--text-color);
+    padding: 5px 10px; /* 小さくする */
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px; /* 小さくする */
+    text-align: center;
+    flex: 1;
+    margin: 0 2px;
+}
+
+.tab-link.active {
+    background-color: var(--text-color);
+    color: var(--border-color);
+}
+
+/* タブコンテンツのスタイル */
+.tab-content {
+    padding: 10px;
+    display: none; /* 初期は非表示 */
+}
+
+.tab-content h3 {
+    margin-top: 1em;
+    margin-bottom: 0.1em;
+}
+
+.tab-content .panel-in-tab:first-child h3 {
+    margin-top: 0;
+}
+
+/* サブパネル */
+.sub-panels {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--toolbox-background-color);
+    margin-top: 15px;
+}
+
+/* .sub-panel-contents {
+    height: calc(100vh - 110px);
+    overflow: auto;   
+} */
+
+/* タブリンクのスタイル */
+.sub-panel-links {
+    margin-left: 5px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sub-panel-link {
+    position: relative;
+    background-color: var(--toolbox-background-color);
+    border: 1px solid var(--border-color-light);
+    border-bottom: none;
+    color: var(--text-color);
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+    font-size: 14px; /* 小さくする */
+    text-align: center;
+    margin: 0;
+}
+
+.sub-panel-link.active {
+    background-color: var(--editor-background-color);
+    top: 1px;
+}
+
+.sub-panel-content {
+    /* padding: 10px; */
+    display: none; /* 初期は非表示 */
+}
+
+.sub-panel-content h3 {
+    margin-top: 0;
+    margin-bottom: 0.1em;
+}
+
+.unit {
+    position: relative;
+    top: 0.3em;
+    font-size: 0.8rem; /* 単位のフォントサイズを小さく設定 */
+    margin-left: 0.3em; /* 単位と入力ボックスの間のスペース */
+}
+
+/* パネルの共通スタイル */
+.panel-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+.sub-panel-content .panel-container {
+    background-color: var(--editor-background-color);
+    padding-top: 12px;
+}
+
+/* 設定パネルの表示非表示 */
+.settings-panel {
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    padding: 3px;
+}
+
+/* ラベルと入力エリアの共通スタイル */
+.panel-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.panel-row span:last-child {
+    flex: 1;
+}
+
+.panel-row label {
+    flex: 1;
+    padding-right: 5px;
+    text-align: right;
+}
+
+.panel-row select,
+.panel-row input {
+    /* flex: 1; */
+    padding: 1px;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    min-width: 20px;
+}
+
+.panel-row>label:only-child {
+    margin: 3px 0 0 0;
+}
+
+/* .parallel-in-row {
+    display: inline-block;
+} */
+
+/* カラーピッカーの共通スタイル */
+.color-picker {
+    width: 100px;
+}
+
+/* 共通の数値入力のスタイル */
+.panel-row input[type="number"],
+.panel-row .input-number {
+    width: 50px;
+    text-align: right;
+}
+
+/* 共通の数値入力のスタイル */
+.panel-row input[type="color"]  {
+    margin-left: 5px;
+    width: 52px;
+    height: 26px;
+}

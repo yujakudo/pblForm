@@ -1,0 +1,84 @@
+/** 
+ * fonts/windows11-ja.css
+ * Windows11の日本語フォント
+ * @copyright   2024 Yujakudo
+ */
+
+.meiryo {
+    font-family: 'Meiryo', sans-serif;
+}
+
+.ms-gothic {
+    font-family: 'MS Gothic', sans-serif;
+}
+
+.ms-pgothic {
+    font-family: 'MS PGothic', sans-serif;
+}
+
+.yu-gothic {
+    font-family: 'Yu Gothic', sans-serif;
+}
+
+.yu-mincho {
+    font-family: 'Yu Mincho', serif;
+}
+
+.ms-mincho {
+    font-family: 'MS Mincho', serif;
+}
+
+.ms-pmincho {
+    font-family: 'MS PMincho', serif;
+}
+
+.ud-kyo {
+    font-family: 'UD デジタル 教科書体 N-B', sans-serif;
+}
+
+.biz-udgothic {
+    font-family: 'BIZ UDGothic', sans-serif;
+}
+
+.biz-udmincho {
+    font-family: 'BIZ UDMincho', serif;
+}
+
+.hg-gothic {
+    font-family: 'HGゴシックE', sans-serif;
+}
+
+.hgp-gothic {
+    font-family: 'HGPゴシックE', sans-serif;
+}
+
+.hg-mincho {
+    font-family: 'HG明朝E', serif;
+}
+
+.hgp-mincho {
+    font-family: 'HGP明朝E', serif;
+}
+
+/* HGSフォント */
+.hgs-gothic {
+    font-family: 'HGSゴシックE', sans-serif;
+}
+
+.hgs-mincho {
+    font-family: 'HGS明朝E', serif;
+}
+
+/* 行書体フォント */
+.hgs-gyosho {
+    font-family: 'HGS行書体', serif;
+}
+
+/* 創英フォント */
+.soei-katakana {
+    font-family: '創英角ポップ体', sans-serif;
+}
+
+.soei-mincho {
+    font-family: '創英明朝体', serif;
+}

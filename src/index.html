@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Form Designer</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/i18n/jquery.spectrum-ja.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="cfe-main.css">
+    <link rel="stylesheet" href="cfe-form.css">
+    <link rel="stylesheet" href="cfe-tab-panels.css">
+    <link rel="stylesheet" href="panels/pnl-paper.css">
+    <link rel="stylesheet" href="panels/pnl-box.css">
+    <link rel="stylesheet" href="tools/cfe-zoom.css">
+    <link rel="stylesheet" href="fonts/windows11-ja.css">
+    <script src="cfe-main.js"></script>
+    <script src="fonts/windows11-ja.js"></script>
+    <script src="cfe-settings.js"></script>
+    <script src="cfe-box.js"></script>
+    <script src="cfe-controller.js"></script>
+    <script src="cfe-model.js"></script>
+    <script src="cfe-form.js"></script>
+    <script src="panels/panel.js"></script>
+    <script src="panels/panel-nesting.js"></script>
+    <script src="panels/pnl-paper.js"></script>
+    <script src="panels/pnl-box.js"></script>
+    <script src="tools/cfe-zoom.js"></script>
+    <script src="cfe-tools.js"></script>
+    <script src="cfe-tab-panels.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="header-left">pblForm Editor</div>
+        <div id="header-center" class="tab-tools">
+            <!-- ツール中央 -->
+        </div>
+        <div id="header-right" class="tab-tools">
+            <!-- ツール右 -->
+        </div>
+    </div>
+    <div id="editor-container">
+        <div id="design-area">
+            <div id="paper-container">
+                <!-- 用紙がここにJavaScriptで挿入される -->
+            </div>
+        </div>
+        <div id="tab-panels">
+            <!-- タブパネル -->
+        </div>
+    </div>
+    <script type="text/javascript">
+        pblForm({
+            initialize: function () {
+                pblForm.Controller.newForm();
+            }
+        });
+    </script>
+</body>
+</html>

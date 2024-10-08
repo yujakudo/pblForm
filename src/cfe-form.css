@@ -1,0 +1,51 @@
+/**
+ * cfe-form.css
+ * 帳票のスタイル
+ * @copyright   2024 Yujakudo
+ */
+
+.cfe-form {
+    transform-origin: center;
+    transform: scale(1);
+    /* position: absolute; */
+    width: fit-content;
+    margin: auto;
+}
+
+
+/* 用紙のスタイル */
+.cfe-page {
+    width: 210mm;
+    height: 297mm;
+    background-color: var(--paper-color);
+    border: 1px solid var(--paper-border-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* グリッド、パーツ、ハイライトレイヤの共通スタイル */
+.cfe-grid-layer, .cfe-parts-layer, .cfe-highlight-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* グリッドレイヤの外枠を表示 */
+.cfe-grid-layer {
+    border: 1px solid var(--grid-color); /* 外枠のスタイルを設定 */
+    z-index: 1;
+}
+
+/* パーツレイヤ */
+.cfe-parts-layer {
+    z-index: 2;
+    /* パーツの配置はここに実装 */
+}
+
+/* ハイライトレイヤ */
+.cfe-highlight-layer {
+    z-index: 3;
+    pointer-events: none; /* ハイライトレイヤがクリックされないようにする */
+    /* 選択されたパーツのハイライトをここに実装 */
+}

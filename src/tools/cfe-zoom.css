@@ -1,0 +1,28 @@
+/** 
+ * tools/cfe-zoom.css
+ * 拡大率設定ツールのスタイル
+ * @copyright   2024 Yujakudo
+ */
+
+ #zoom-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#slider-container {
+    width: 180px;
+    margin: 0;
+    text-align: center;
+}
+
+#zoom-slider {
+    margin-top: 5px;
+    width: 100%;
+}
+
+#zoom-level {
+    font-size: 16px;
+    text-align: center;
+    min-width: 50px;
+}
